@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button>Dodaj element do listy</button>
+    <button><a href="/index.html">Kwadraty</a></button>
+    <ul>
+
+    </ul>
+    <script>
+        const button = document.querySelector('button');
+        const ul = document.querySelector('ul');
+        let number = 1;
+
+        const addElement = function() {
+                const li = document.createElement('li');
+                li.textContent = number;
+                if (number % 3 === 0) {
+                    li.classList.add('upper');
+                    //div.classList.add('circle');
+                }
+                ul.appendChild(li);
+                number += 2; // tylko liczby nieparzyste
+        }
+        button.addEventListener("click", addElement);
+    </script>
+</body>
+</html>

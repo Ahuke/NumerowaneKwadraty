@@ -96,3 +96,9 @@ div::before
     z-index: 1;
     transform: rotate(125deg) translateY(40%) scale(1.8);
 }
+
+.upper
+{
+    font-size: 20px;
+    color: rgb(214, 210, 132);
+}
