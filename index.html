@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerowane Kwadraty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button>Utwórz element</button>
+    <script>    
+        const button = document.querySelector('button');
+        const divs = document.querySelectorAll('div');
+        let number = 1;
+        const addElement = function() {
+            const div = document.createElement('div');
+            document.body.appendChild(div);
+            div.textContent = number;
+            number++;
+        }
+
+        button.addEventListener("click", addElement)
+        
+
+    </script>
+</body>
+
+</html>
